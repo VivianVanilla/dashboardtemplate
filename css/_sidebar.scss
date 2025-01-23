@@ -1,0 +1,9 @@
+.column { display: flex;
+flex-direction: column; }
+
+.sidebar  {
+    @extend .column ;
+}
+.navbar {
+    @extend .column ;
+}
