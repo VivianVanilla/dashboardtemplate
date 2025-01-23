@@ -10,6 +10,19 @@
 
 .card {
   background-color: #1a1e1f;
+  padding: 0.9rem;
+}
+
+#yellow {
+  background-color: #e2ea46;
+}
+
+#blue {
+  background-color: #36bcba;
+}
+
+#orange {
+  background-color: #f65606;
 }
 
 * {
@@ -17,8 +30,25 @@
   font-weight: 400;
   font-style: normal;
   font-size: 1.1rem;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  color: #fafcfc;
 }
 
 main {
+  background-color: #070e0e;
   display: flex;
+}
+
+.info-cards, .task-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.task-box span {
+  display: block;
 }/*# sourceMappingURL=style.css.map */

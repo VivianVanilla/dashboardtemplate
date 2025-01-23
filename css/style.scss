@@ -1,5 +1,11 @@
 @use 'sidebar.scss';
 @use '_card';
+@use '_vars' as v;
+
+@mixin spaceBetween() {
+  display: flex;
+  justify-content: space-between;
+}
 
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
 * {
@@ -7,8 +13,27 @@
     font-weight: 400;
     font-style: normal;
     font-size: 1.1rem;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+  }
+
+html {
+    color: v.$main-text-color;
   }
 
 main {
-    display: flex;
+  background-color: v.$primary-bg;
+  display: flex;
+}
+
+.info-cards, .task-container {
+  @include spaceBetween;
+}
+
+.task-box {
+  span {
+    display: block;
+  }
 }

@@ -2,4 +2,15 @@
 
 .card {
     background-color: v.$secondary-bg;
+    padding: .9rem;
+}
+
+#yellow {
+    background-color: v.$main-yellow;
+}
+#blue {
+    background-color: v.$main-blue;
+}
+#orange {
+    background-color: v.$main-orange;
 }
