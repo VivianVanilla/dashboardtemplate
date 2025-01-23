@@ -28,7 +28,7 @@ main {
   display: flex;
 }
 
-.info-cards, .task-container {
+.info-cards, .task-container, .card-header {
   @include spaceBetween;
 }
 
@@ -37,3 +37,4 @@ main {
     display: block;
   }
 }
+
