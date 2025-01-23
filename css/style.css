@@ -1,12 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap");
-.column, .navbar, .sidebar {
+.column, .teams, .navbar, .sidebar {
   display: flex;
   flex-direction: column;
+}
+
+.sidebar {
+  background-color: #1a1e1f;
 }
 
 * {
   font-family: "M PLUS Rounded 1c", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1rem;
+  font-size: 1.1rem;
+}
+
+main {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */

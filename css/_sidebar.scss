@@ -1,9 +1,15 @@
+@use '_vars' as v;
+
 .column { display: flex;
 flex-direction: column; }
 
 .sidebar  {
     @extend .column ;
+    background-color: v.$secondary-bg ;
 }
 .navbar {
+    @extend .column ;
+}
+.teams {
     @extend .column ;
 }
