@@ -24,6 +24,26 @@
   margin-bottom: 1.5rem;
 }
 
+.task-box {
+  padding: 0.9rem;
+  color: #070e0e;
+  border-radius: 0.9rem;
+  width: 5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.task-box p {
+  font-size: 0.5rem;
+}
+.task-box span.big-black {
+  display: block;
+  font-weight: 900;
+  color: black;
+}
+
 #yellow {
   background-color: #e2ea46;
 }
@@ -91,24 +111,13 @@ main {
   justify-content: space-between;
 }
 
-.task-box {
-  padding: 0.9rem;
-  color: #070e0e;
-  border-radius: 0.9rem;
-  width: 5em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.task-box p {
-  font-size: 0.5rem;
-}
-.task-box span.big-black {
-  display: block;
-  font-weight: 900;
-  color: black;
+.see-projects {
+  background-color: #36bcba;
+  border: none;
+  padding: 0.3rem 3rem;
+  font-size: 0.7rem;
+  font-weight: bold;
+  border-radius: 0.5em;
 }
 
 .list-style {
