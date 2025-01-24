@@ -46,6 +46,13 @@ html {
   color: v.$main-text-color;
  }
 
+ header {
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+  }
+ }
+
 main {
   background-color: v.$primary-bg;
   display: flex;
@@ -62,6 +69,10 @@ main {
 
 .info-cards, .task-container, .card-header {
   @include spaceBetween;
+}
+
+.info-cards {
+  flex-wrap: wrap;
 }
 
 .card-header {

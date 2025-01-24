@@ -27,6 +27,16 @@
   margin-bottom: 1.5rem;
 }
 
+.task-counter p {
+  color: gray;
+  font-size: 0.7rem;
+}
+.task-counter span {
+  color: #fafcfc;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
 .task-box {
   padding: 0.9rem;
   color: #070e0e;
@@ -38,21 +48,28 @@
   align-items: center;
   text-align: center;
 }
+.task-box .fa {
+  margin-bottom: 1.3rem;
+  font-size: 1.3rem;
+}
 .task-box p {
   font-size: 0.5rem;
 }
 .task-box span.big-black {
   display: block;
   font-weight: 900;
+  font-size: 1.5rem;
   color: black;
 }
 
 #yellow {
   background-color: #e2ea46;
+  margin-right: 1.2rem;
 }
 
 #blue {
   background-color: #36bcba;
+  margin-right: 1.2rem;
 }
 
 #orange {
@@ -132,6 +149,11 @@ a {
   color: #fafcfc;
 }
 
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
 main {
   background-color: #070e0e;
   display: flex;
@@ -149,6 +171,10 @@ main {
 .info-cards, .task-container, .card-header {
   display: flex;
   justify-content: space-between;
+}
+
+.info-cards {
+  flex-wrap: wrap;
 }
 
 .card-header {
