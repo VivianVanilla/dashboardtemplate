@@ -13,3 +13,11 @@ flex-direction: column; }
 .teams {
     @extend .column ;
 }
+.navbar {
+    a {
+        display: flex;
+        img {
+            padding-right: 1em;
+        }
+    }
+}
