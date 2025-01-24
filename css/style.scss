@@ -2,6 +2,7 @@
 @use '_card';
 @use '_vars' as v;
 @use '_table';
+@use '_media';
 
 @mixin spaceBetween() {
   display: flex;
