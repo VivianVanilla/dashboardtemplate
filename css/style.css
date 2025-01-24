@@ -118,6 +118,10 @@ input:checked + .slider:before {
   margin-bottom: 1.5rem;
 }
 
+.date .fa-calendar-day {
+  color: #36bcba;
+}
+
 .card:nth-of-type(odd) {
   flex-grow: 1.5;
 }

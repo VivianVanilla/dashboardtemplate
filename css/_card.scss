@@ -12,6 +12,9 @@
     }
 }
 
+.date .fa-calendar-day {
+    color: v.$main-blue;
+}
 
 .card:nth-of-type(odd) {
     flex-grow: 1.5;
