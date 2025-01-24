@@ -118,6 +118,15 @@ input:checked + .slider:before {
   margin-bottom: 1.5rem;
 }
 
+.card:nth-of-type(odd) {
+  flex-grow: 1.5;
+}
+
+.card:nth-of-type(2) {
+  flex-grow: 2;
+  margin: 0 1.5rem;
+}
+
 .task-counter p {
   color: gray;
   font-size: 0.7rem;
@@ -240,9 +249,27 @@ a {
   color: #fafcfc;
 }
 
+header div:nth-of-type(2) {
+  width: 12%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header div:nth-of-type(2) .fa {
+  background-color: #1a1e1f;
+  padding: 0.5rem;
+  border-radius: 2px;
+}
 header h1 {
   font-size: 2.5rem;
   font-weight: 900;
+}
+
+.user-prof-pic {
+  height: 2.5rem;
+  width: 2.5rem;
+  border: 1px solid gray;
+  border-radius: 50%;
 }
 
 main {
@@ -259,9 +286,40 @@ main {
   margin-bottom: 2rem;
 }
 
-.info-cards, .task-container, .card-header {
+header, .info-cards, .task-container, .card-header {
   display: flex;
   justify-content: space-between;
+}
+
+.participants {
+  border: 1px solid gray;
+  height: 2.5em;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.3rem;
+}
+
+.prof-small {
+  height: 2em;
+  width: 2em;
+  border: 1px solid gray;
+  border-radius: 50%;
+}
+
+.second {
+  position: relative;
+  left: -10px;
+}
+
+.third {
+  position: relative;
+  left: -20px;
+}
+
+.c-parent {
+  display: flex;
 }
 
 .info-cards {
