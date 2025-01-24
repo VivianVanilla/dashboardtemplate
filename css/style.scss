@@ -67,8 +67,35 @@ main {
   } 
 }
 
-.info-cards, .task-container, .card-header {
+header, .info-cards, .task-container, .card-header {
   @include spaceBetween;
+}
+
+.participants {
+  border: 1px solid gray;
+  height: 2.5em;
+  border-radius: 30px;
+  @include spaceBetween;
+  align-items: center;
+  padding: 0 .3rem;
+}
+.prof-small {
+  height: 2em;
+  width: 2em;
+  border: 1px solid gray;
+  border-radius: 50%;
+}
+.second {
+  position: relative;
+  left: -10px;
+}
+.third {
+  position: relative;
+  left: -20px;
+}
+
+.c-parent {
+  display: flex;
 }
 
 .info-cards {

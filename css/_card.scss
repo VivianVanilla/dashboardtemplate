@@ -4,14 +4,12 @@
     background-color: v.$secondary-bg;
     padding: 1.2rem;
     border-radius: .9rem;
-    
-    > * {
-        margin-bottom: 1.5rem;
-    }
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
+    > * {
+        margin-bottom: 1.5rem;
+    }
 }
 
 .task-counter {
