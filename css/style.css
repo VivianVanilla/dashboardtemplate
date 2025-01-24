@@ -6,6 +6,7 @@
 
 .sidebar {
   background-color: #1a1e1f;
+  width: 18%;
 }
 
 .navbar a {
@@ -13,6 +14,31 @@
 }
 .navbar a img {
   padding-right: 1em;
+}
+
+.teams a {
+  display: flex;
+}
+.teams p {
+  font-size: 0.8em;
+  color: gray;
+}
+.teams .blue {
+  background-color: blue;
+  height: 0.9em;
+  width: 0.9em;
+  border-radius: 0.25em;
+  margin-right: 1em;
+}
+.teams .red {
+  background-color: red;
+  height: 0.9em;
+  width: 0.9em;
+  border-radius: 0.25em;
+  margin-right: 1em;
+}
+.teams img {
+  margin-right: 1em;
 }
 
 .card {
@@ -138,4 +164,11 @@ table th {
 }
 table th:nth-of-type(4), table td:nth-of-type(4) {
   text-align: right;
+}
+
+.logo {
+  display: flex;
+}
+.logo h3 {
+  font-size: 1.5em;
 }/*# sourceMappingURL=style.css.map */
