@@ -23,6 +23,11 @@ html {
     color: v.$main-text-color;
   }
 
+  .small-gray {
+    color: gray;
+    font-size: .8rem;
+  }
+
   .sidebar {
     padding: 3rem 4.5rem 3rem 3rem;
   }
@@ -51,13 +56,28 @@ main {
 }
 
 .task-box {
+  padding: 1.5rem;
+  text-align: center;
+  color: v.$primary-bg;
+  border-radius: .9rem;
   span {
     display: block;
   }
 }
 
-th, td {
-  border-bottom: 1px solid v.$secondary-bg;
-  
+table {
+  width: 100%;
+  th, td {
+    border-bottom: 1px solid v.$secondary-bg; 
+    border-collapse: collapse;
+  }
+  th {
+    text-align: left;
+  }
+  td:nth-of-type(4) {
+    text-align: right;
+  }
 }
+
+
 

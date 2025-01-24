@@ -39,6 +39,11 @@ html {
   color: #fafcfc;
 }
 
+.small-gray {
+  color: gray;
+  font-size: 0.8rem;
+}
+
 .sidebar {
   padding: 3rem 4.5rem 3rem 3rem;
 }
@@ -67,10 +72,26 @@ main {
   justify-content: space-between;
 }
 
+.task-box {
+  padding: 1.5rem;
+  text-align: center;
+  color: #070e0e;
+  border-radius: 0.9rem;
+}
 .task-box span {
   display: block;
 }
 
-th, td {
+table {
+  width: 100%;
+}
+table th, table td {
   border-bottom: 1px solid #1a1e1f;
+  border-collapse: collapse;
+}
+table th {
+  text-align: left;
+}
+table td:nth-of-type(4) {
+  text-align: right;
 }/*# sourceMappingURL=style.css.map */
