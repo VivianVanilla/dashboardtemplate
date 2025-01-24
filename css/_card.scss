@@ -12,6 +12,15 @@
     }
 }
 
+
+.card:nth-of-type(odd) {
+    flex-grow: 1.5;
+}
+.card:nth-of-type(2) {
+    flex-grow: 2;
+    margin: 0 1.5rem;
+}
+
 .task-counter {
     p {
         color: gray;
