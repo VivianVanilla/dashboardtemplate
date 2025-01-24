@@ -1,6 +1,7 @@
 @use 'sidebar.scss';
 @use '_card';
 @use '_vars' as v;
+@use '_table';
 
 @mixin spaceBetween() {
   display: flex;
@@ -63,6 +64,34 @@ main {
   @include spaceBetween;
 }
 
+.card-header {
+  align-items: center;
+  span {
+    font-size: .7rem;
+    padding: 0 .5rem;
+  }
+  span.design {
+    background-color: #89898980;
+    border-radius: 3px;
+  }
+  span.activity {
+    color: v.$main-blue;
+    background-color: #36bcba80;
+    border-radius: 20px;
+  }
+}
+
+.progress-bar {
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background: linear-gradient(
+  to right,  
+  v.$main-yellow,
+    gray
+  );
+}
+
 .see-projects {
   background-color: v.$main-blue;
   border: none;
@@ -76,6 +105,7 @@ main {
   margin-top: 4rem;
 }
 
+<<<<<<< HEAD
 table {
   width: 100%;
   th, td {
@@ -98,6 +128,8 @@ table {
      }
 }
 
+=======
+>>>>>>> cab3af719adaf497f2d11434e03e5a54bf428d2f
 
 
 

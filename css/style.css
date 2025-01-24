@@ -45,6 +45,9 @@
   background-color: #1a1e1f;
   padding: 1.2rem;
   border-radius: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .card > * {
   margin-bottom: 1.5rem;
@@ -80,6 +83,43 @@
 
 #orange {
   background-color: #f65606;
+}
+
+table {
+  width: 100%;
+}
+table th, table td {
+  border-bottom: 1px solid #1a1e1f;
+  border-collapse: collapse;
+  padding: 0.9rem;
+  font-size: 0.7rem;
+}
+table th {
+  text-align: left;
+}
+table th:nth-of-type(4), table td:nth-of-type(4) {
+  text-align: right;
+}
+
+.status {
+  font-size: 0.7rem;
+  padding: 0 0.9rem;
+  border-radius: 20px;
+}
+
+.progress {
+  color: #f65606;
+  background-color: rgba(246, 86, 6, 0.5019607843);
+}
+
+.review {
+  color: #e2ea46;
+  background-color: rgba(226, 234, 70, 0.5019607843);
+}
+
+.done {
+  color: #36bcba;
+  background-color: rgba(54, 188, 186, 0.5019607843);
 }
 
 * {
@@ -137,6 +177,30 @@ main {
   justify-content: space-between;
 }
 
+.card-header {
+  align-items: center;
+}
+.card-header span {
+  font-size: 0.7rem;
+  padding: 0 0.5rem;
+}
+.card-header span.design {
+  background-color: rgba(137, 137, 137, 0.5019607843);
+  border-radius: 3px;
+}
+.card-header span.activity {
+  color: #36bcba;
+  background-color: rgba(54, 188, 186, 0.5019607843);
+  border-radius: 20px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background: linear-gradient(to right, #e2ea46, gray);
+}
+
 .see-projects {
   background-color: #36bcba;
   border: none;
@@ -148,6 +212,7 @@ main {
 
 .list-style {
   margin-top: 4rem;
+<<<<<<< HEAD
 }
 
 table {
@@ -171,4 +236,6 @@ table th:nth-of-type(4), table td:nth-of-type(4) {
 }
 .logo h3 {
   font-size: 1.5em;
+=======
+>>>>>>> cab3af719adaf497f2d11434e03e5a54bf428d2f
 }/*# sourceMappingURL=style.css.map */
