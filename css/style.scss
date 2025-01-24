@@ -70,6 +70,13 @@ html {
   border-radius: 50%;
  }
 
+ .user-prof-img {
+  object-fit: cover;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+ }
+
 main {
   background-color: v.$primary-bg;
   display: flex;
@@ -109,6 +116,13 @@ header, .info-cards, .task-container, .card-header {
 .third {
   position: relative;
   left: -20px;
+}
+
+.prof-img {
+  object-fit: cover;
+  border-radius: 50%;
+  height: 2em;
+  width: 2em;
 }
 
 .c-parent {

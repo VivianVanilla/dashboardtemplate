@@ -191,6 +191,11 @@ table th {
 table th:nth-of-type(4), table td:nth-of-type(4) {
   text-align: right;
 }
+table td:first-of-type {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
 
 .status {
   font-size: 0.7rem;
@@ -272,6 +277,14 @@ header h1 {
   border-radius: 50%;
 }
 
+.user-prof-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+}
+
 main {
   background-color: #070e0e;
   display: flex;
@@ -316,6 +329,14 @@ header, .info-cards, .task-container, .card-header {
 .third {
   position: relative;
   left: -20px;
+}
+
+.prof-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  height: 2em;
+  width: 2em;
 }
 
 .c-parent {

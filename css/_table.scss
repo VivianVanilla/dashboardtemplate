@@ -14,6 +14,11 @@ table {
     th:nth-of-type(4), td:nth-of-type(4) {
       text-align: right;
     }
+    td:first-of-type {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
   }
 
   .status {
