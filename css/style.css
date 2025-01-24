@@ -10,7 +10,7 @@
 
 .card {
   background-color: #1a1e1f;
-  padding: 0.9rem;
+  padding: 1.2rem;
   border-radius: 0.9rem;
 }
 .card > * {
@@ -49,7 +49,7 @@ html {
 }
 
 .sidebar {
-  padding: 3rem 4.5rem 3rem 3rem;
+  padding: 3rem 3.5rem 3rem 3rem;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -57,6 +57,7 @@ html {
 
 .navbar > *, .teams > * {
   margin-bottom: 0.95rem;
+  font-size: 0.8rem;
 }
 
 a {
@@ -84,15 +85,27 @@ main {
 }
 
 .task-box {
-  padding: 1.5rem;
-  text-align: center;
+  padding: 0.9rem;
   color: #070e0e;
   border-radius: 0.9rem;
+  width: 5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.task-box p {
+  font-size: 0.5rem;
 }
 .task-box span.big-black {
   display: block;
   font-weight: 900;
   color: black;
+}
+
+.list-style {
+  margin-top: 4rem;
 }
 
 table {
@@ -101,10 +114,12 @@ table {
 table th, table td {
   border-bottom: 1px solid #1a1e1f;
   border-collapse: collapse;
+  font-size: 0.7rem;
+  padding: 0.9rem;
 }
 table th {
   text-align: left;
 }
-table td:nth-of-type(4) {
+table th:nth-of-type(4), table td:nth-of-type(4) {
   text-align: right;
 }/*# sourceMappingURL=style.css.map */
