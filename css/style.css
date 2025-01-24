@@ -41,6 +41,71 @@
   margin-right: 1em;
 }
 
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 4em;
+  height: 2em;
+}
+.toggle input {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 3em;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.5em;
+  width: 1.5em;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+  z-index: 4;
+}
+
+input:checked + .slider {
+  background-color: gray;
+}
+
+input:checked + .slider:before {
+  transform: translateX(2em);
+}
+
+.darkmode {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.darkmode div img.moon {
+  position: absolute;
+  margin: 0.65em 0.3em;
+  z-index: 3;
+}
+.darkmode div img.sun {
+  position: absolute;
+  margin: 0.53em -1.3em;
+  z-index: 3;
+}
+.darkmode p {
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+}
+
 .card {
   background-color: #1a1e1f;
   padding: 1.2rem;
