@@ -30,7 +30,14 @@ html {
 
   .sidebar {
     padding: 3rem 4.5rem 3rem 3rem;
-  }
+    @include spaceBetween;
+    flex-direction: column;
+    }
+
+    .navbar > *, .teams > * {
+      margin-bottom: .95rem;
+    }
+  
 
  a {
   text-decoration: none;
@@ -60,8 +67,10 @@ main {
   text-align: center;
   color: v.$primary-bg;
   border-radius: .9rem;
-  span {
+  span.big-black {
     display: block;
+    font-weight: 900;
+    color: black;
   }
 }
 

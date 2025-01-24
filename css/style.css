@@ -11,6 +11,10 @@
 .card {
   background-color: #1a1e1f;
   padding: 0.9rem;
+  border-radius: 0.9rem;
+}
+.card > * {
+  margin-bottom: 1.5rem;
 }
 
 #yellow {
@@ -46,6 +50,13 @@ html {
 
 .sidebar {
   padding: 3rem 4.5rem 3rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.navbar > *, .teams > * {
+  margin-bottom: 0.95rem;
 }
 
 a {
@@ -78,8 +89,10 @@ main {
   color: #070e0e;
   border-radius: 0.9rem;
 }
-.task-box span {
+.task-box span.big-black {
   display: block;
+  font-weight: 900;
+  color: black;
 }
 
 table {
