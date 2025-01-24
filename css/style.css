@@ -39,9 +39,27 @@ html {
   color: #fafcfc;
 }
 
+.sidebar {
+  padding: 3rem 4.5rem 3rem 3rem;
+}
+
+a {
+  text-decoration: none;
+  color: #fafcfc;
+}
+
 main {
   background-color: #070e0e;
   display: flex;
+}
+
+.display {
+  margin: 0 auto;
+  width: 100%;
+  padding: 2rem;
+}
+.display > * {
+  margin-bottom: 2rem;
 }
 
 .info-cards, .task-container, .card-header {
@@ -51,4 +69,8 @@ main {
 
 .task-box span {
   display: block;
+}
+
+th, td {
+  border-bottom: 1px solid #1a1e1f;
 }/*# sourceMappingURL=style.css.map */

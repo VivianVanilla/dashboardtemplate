@@ -23,9 +23,27 @@ html {
     color: v.$main-text-color;
   }
 
+  .sidebar {
+    padding: 3rem 4.5rem 3rem 3rem;
+  }
+
+ a {
+  text-decoration: none;
+  color: v.$main-text-color;
+ }
+
 main {
   background-color: v.$primary-bg;
   display: flex;
+}
+
+.display {
+  margin: 0 auto;
+  width: 100%;
+  padding: 2rem;
+  > * {
+    margin-bottom: 2rem;
+  } 
 }
 
 .info-cards, .task-container, .card-header {
@@ -36,5 +54,10 @@ main {
   span {
     display: block;
   }
+}
+
+th, td {
+  border-bottom: 1px solid v.$secondary-bg;
+  
 }
 
