@@ -1,0 +1,36 @@
+@use '_vars' as v;
+
+table {
+    width: 100%;
+    th, td {
+      border-bottom: 1px solid v.$secondary-bg; 
+      border-collapse: collapse;
+      padding: .9rem;
+      font-size: .7rem;
+    }
+    th {
+      text-align: left;
+    }
+    th:nth-of-type(4), td:nth-of-type(4) {
+      text-align: right;
+    }
+  }
+
+  .status {
+    font-size: .7rem;
+    padding: 0 .9rem;
+    border-radius: 20px;
+  }
+
+  .progress {
+    color: v.$main-orange;
+    background-color: #f6560680;
+  }
+  .review {
+    color: v.$main-yellow;
+    background-color: #e2ea4680;
+  }
+  .done {
+    color: v.$main-blue;
+    background-color: #36bcba80;
+  }
