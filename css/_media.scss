@@ -1,0 +1,10 @@
+@use '_card';
+
+@media (max-width: 1200px) {
+    .info-cards {
+        justify-content: center;
+        background-color: yellow;
+    }
+
+
+}

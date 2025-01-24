@@ -106,6 +106,11 @@ input:checked + .slider:before {
   margin-left: 0.5em;
 }
 
+@media only screen and (max-width: 1200px) {
+  .info-cards {
+    justify-content: center;
+  }
+}
 .card {
   background-color: #1a1e1f;
   padding: 1.2rem;
