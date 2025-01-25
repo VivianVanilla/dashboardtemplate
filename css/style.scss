@@ -35,6 +35,16 @@ html {
     flex-direction: column;
     }
 
+    .navbar, .teams {
+      .fa {
+        margin-right: 1.3rem;
+      }
+      a:hover {
+        color: v.$main-blue;
+        background-color: #36bcba80;
+      }
+    }
+
     .navbar > *, .teams > * {
       margin-bottom: .95rem;
     }
@@ -231,6 +241,11 @@ table {
 }
 
 @media (max-width: 1300px) {
+  .navbar, .teams {
+    .fa {
+      margin-right: 0;
+    }
+  }
   
   span.hide {
     display: none;

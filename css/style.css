@@ -12,9 +12,6 @@
 .navbar a {
   display: flex;
 }
-.navbar a img {
-  padding-right: 1em;
-}
 
 .teams a {
   display: flex;
@@ -22,23 +19,6 @@
 .teams p {
   font-size: 0.8em;
   color: gray;
-}
-.teams .blue {
-  background-color: blue;
-  height: 0.9em;
-  width: 0.9em;
-  border-radius: 0.25em;
-  margin-right: 1em;
-}
-.teams .red {
-  background-color: red;
-  height: 0.9em;
-  width: 0.9em;
-  border-radius: 0.25em;
-  margin-right: 1em;
-}
-.teams img {
-  margin-right: 1em;
 }
 
 .toggle {
@@ -113,7 +93,6 @@ input:checked + .slider:before {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-width: 250px;
 }
 .card > * {
   margin-bottom: 1.5rem;
@@ -125,11 +104,13 @@ input:checked + .slider:before {
 
 .card:nth-of-type(odd) {
   flex-grow: 1.5;
+  min-width: 250px;
 }
 
 .card:nth-of-type(2) {
   flex-grow: 2;
   margin: 0 1.5rem;
+  min-width: 350px;
 }
 
 .task-counter p {
@@ -269,6 +250,14 @@ html {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+}
+
+.navbar .fa, .teams .fa {
+  margin-right: 1.3rem;
+}
+.navbar a:hover, .teams a:hover {
+  color: #36bcba;
+  background-color: rgba(54, 188, 186, 0.5019607843);
 }
 
 .navbar > *, .teams > * {
@@ -470,6 +459,9 @@ table th:nth-of-type(4), table td:nth-of-type(4) {
 }
 
 @media (max-width: 1300px) {
+  .navbar .fa, .teams .fa {
+    margin-right: 0;
+  }
   span.hide {
     display: none;
   }
