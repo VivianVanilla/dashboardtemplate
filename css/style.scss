@@ -35,7 +35,7 @@ html {
     flex-direction: column;
     }
 
-    .navbar, .teams {
+    .navbar {
       .fa {
         margin-right: 1.3rem;
       }
@@ -43,6 +43,12 @@ html {
         color: v.$main-blue;
         background-color: #36bcba80;
       }
+    }
+
+    .teams {
+    .fa {
+      margin-right: 1.3rem;
+    }
     }
 
     .navbar > *, .teams > * {

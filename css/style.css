@@ -252,12 +252,16 @@ html {
   flex-direction: column;
 }
 
-.navbar .fa, .teams .fa {
+.navbar .fa {
   margin-right: 1.3rem;
 }
-.navbar a:hover, .teams a:hover {
+.navbar a:hover {
   color: #36bcba;
   background-color: rgba(54, 188, 186, 0.5019607843);
+}
+
+.teams .fa {
+  margin-right: 1.3rem;
 }
 
 .navbar > *, .teams > * {
