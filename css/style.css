@@ -180,18 +180,6 @@ input:checked + .slider:before {
   background-color: #f65606;
 }
 
-@media (max-width: 1200px) {
-  .info-cards {
-    justify-content: center;
-  }
-  .card:nth-of-type(odd) {
-    flex-grow: 0;
-  }
-  .card:nth-of-type(2) {
-    flex-grow: 0;
-    margin: 0 1.5rem;
-  }
-}
 table {
   width: 100%;
 }
