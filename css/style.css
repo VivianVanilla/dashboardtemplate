@@ -113,6 +113,7 @@ input:checked + .slider:before {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  min-width: 250px;
 }
 .card > * {
   margin-bottom: 1.5rem;
@@ -180,20 +181,26 @@ input:checked + .slider:before {
   background-color: #f65606;
 }
 
-@media (max-width: 1200px) {
-  .info-cards {
-    justify-content: center;
-  }
-  .card:nth-of-type(odd) {
-    flex-grow: 0;
-  }
-  .card:nth-of-type(2) {
-    flex-grow: 0;
-    margin: 0 1.5rem;
-  }
+.scrolling-table {
+  width: 100%;
+  overflow: auto;
 }
+
+.scrolling-table::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: gray;
+  border-radius: 0.5rem;
+  visibility: hidden;
+}
+
+.scrolling-table:hover::-webkit-scrollbar {
+  visibility: visible;
+}
+
 table {
   width: 100%;
+  min-width: 1000px;
 }
 table th, table td {
   border-bottom: 1px solid #1a1e1f;
@@ -211,6 +218,10 @@ table td:first-of-type {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+
+tbody {
+  overflow: auto;
 }
 
 .status {
@@ -262,7 +273,10 @@ html {
 
 .navbar > *, .teams > * {
   margin-bottom: 0.95rem;
-  font-size: 0.8rem;
+}
+
+span.hide {
+  font-size: 0.9rem;
 }
 
 a {
@@ -310,6 +324,7 @@ main {
   margin: 0 auto;
   width: 100%;
   padding: 2rem;
+  overflow: hidden;
 }
 .display > * {
   margin-bottom: 2rem;
@@ -452,4 +467,38 @@ table th:nth-of-type(4), table td:nth-of-type(4) {
   padding-bottom: 8.6em;
   text-align: center;
   width: 30%;
+}
+
+@media (max-width: 1300px) {
+  span.hide {
+    display: none;
+  }
+  .info-cards {
+    justify-content: center;
+    color: yellow;
+  }
+  .card:nth-of-type(odd) {
+    flex-grow: 0;
+  }
+  .card:nth-of-type(2) {
+    flex-grow: 0;
+  }
+  .card:nth-of-type(3) {
+    flex-grow: 0;
+  }
+}
+@media (max-width: 1235px) {
+  .sidebar {
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+  }
+  .sidebar .logo, .sidebar .navbar, .sidebar .teams {
+    margin-bottom: 2rem;
+  }
+  .info-cards {
+    color: red;
+  }
 }/*# sourceMappingURL=style.css.map */

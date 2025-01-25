@@ -37,9 +37,11 @@ html {
 
     .navbar > *, .teams > * {
       margin-bottom: .95rem;
-      font-size: .8rem;
     }
   
+    span.hide {
+      font-size: 0.9rem;
+    }
 
  a {
   text-decoration: none;
@@ -86,6 +88,7 @@ main {
   margin: 0 auto;
   width: 100%;
   padding: 2rem;
+  overflow: hidden;
   > * {
     margin-bottom: 2rem;
   } 
@@ -227,7 +230,48 @@ table {
     }
 }
 
+@media (max-width: 1300px) {
+  
+  span.hide {
+    display: none;
+  }
 
+  .info-cards {
+      justify-content: center;
+      color: yellow;
+  }
+
+  .card:nth-of-type(odd) {
+      flex-grow: 0;
+  }
+  .card:nth-of-type(2) {
+      flex-grow: 0;
+  }
+  .card:nth-of-type(3) {
+    flex-grow: 0;
+}
+
+}
+
+@media (max-width: 1235px) {
+  .sidebar {
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    .logo, .navbar, .teams {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .info-cards {
+    color: red;
+  }
+
+  
+
+}
 
 
 
