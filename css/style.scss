@@ -252,6 +252,11 @@ table {
       margin-right: 0;
     }
   }
+
+  .sidebar {
+    justify-content: flex-start;
+    align-items: center;
+  }
   
   span.hide {
     display: none;
@@ -276,8 +281,6 @@ table {
 
 @media (max-width: 1235px) {
   .sidebar {
-    justify-content: flex-start;
-    align-items: center;
     height: 100vh;
     position: sticky;
     top: 0;
