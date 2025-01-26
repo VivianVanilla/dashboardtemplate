@@ -11,6 +11,8 @@
 
 .navbar a {
   display: flex;
+  padding: 0.5rem;
+  border-radius: 5px;
 }
 
 .teams a {
@@ -205,6 +207,10 @@ tbody {
   overflow: auto;
 }
 
+td .prof-small {
+  margin-right: 0.5rem;
+}
+
 .status {
   font-size: 0.7rem;
   padding: 0 0.9rem;
@@ -257,7 +263,7 @@ html {
 }
 .navbar a:hover {
   color: #36bcba;
-  background-color: rgba(54, 188, 186, 0.5019607843);
+  background-color: rgba(54, 188, 186, 0.3137254902);
 }
 
 .teams .fa {
@@ -269,7 +275,7 @@ html {
 }
 
 span.hide {
-  font-size: 0.9rem;
+  font-size: 0.7rem;
 }
 
 a {
@@ -466,6 +472,9 @@ table th:nth-of-type(4), table td:nth-of-type(4) {
   .navbar .fa, .teams .fa {
     margin-right: 0;
   }
+  .sidebar {
+    align-items: center;
+  }
   span.hide {
     display: none;
   }
@@ -485,9 +494,9 @@ table th:nth-of-type(4), table td:nth-of-type(4) {
 }
 @media (max-width: 1235px) {
   .sidebar {
+    height: 100vh;
     justify-content: flex-start;
     align-items: center;
-    height: 100vh;
     position: sticky;
     top: 0;
   }

@@ -41,6 +41,12 @@ table {
     overflow: auto;
   }
 
+  td {
+    .prof-small {
+      margin-right: .5rem;
+    }
+  }
+
   .status {
     font-size: .7rem;
     padding: 0 .9rem;

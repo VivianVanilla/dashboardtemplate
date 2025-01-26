@@ -41,7 +41,7 @@ html {
       }
       a:hover {
         color: v.$main-blue;
-        background-color: #36bcba80;
+        background-color: #36bcba50;
       }
     }
 
@@ -56,7 +56,7 @@ html {
     }
   
     span.hide {
-      font-size: 0.9rem;
+      font-size: 0.7rem;
     }
 
  a {
@@ -254,7 +254,6 @@ table {
   }
 
   .sidebar {
-    justify-content: flex-start;
     align-items: center;
   }
   
@@ -282,6 +281,8 @@ table {
 @media (max-width: 1235px) {
   .sidebar {
     height: 100vh;
+    justify-content: flex-start;
+    align-items: center;
     position: sticky;
     top: 0;
     .logo, .navbar, .teams {
