@@ -15,9 +15,6 @@
   border-radius: 5px;
 }
 
-.teams a {
-  display: flex;
-}
 .teams p {
   font-size: 0.8em;
   color: gray;
@@ -429,6 +426,9 @@ table th {
 table th:nth-of-type(4), table td:nth-of-type(4) {
   text-align: right;
 }
+table tr:hover {
+  background-color: #1a1e1f;
+}
 
 .logo {
   display: flex;
@@ -504,6 +504,6 @@ table th:nth-of-type(4), table td:nth-of-type(4) {
     margin-bottom: 2rem;
   }
   .info-cards {
-    color: red;
+    color: orange;
   }
 }/*# sourceMappingURL=style.css.map */
