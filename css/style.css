@@ -294,6 +294,11 @@ main {
   display: flex;
 }
 
+.lightmode {
+  background-color: #D6DADA;
+  color: #070e0e;
+}
+
 .display {
   margin: 0 auto;
   width: 100%;
