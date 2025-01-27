@@ -1,7 +1,23 @@
 @use '_vars' as v;
 
+.scrolling-table {
+  width: 100%;
+  overflow: auto;
+}
+.scrolling-table::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: gray;
+  border-radius: 0.5rem;
+  visibility: hidden;
+}
+.scrolling-table:hover::-webkit-scrollbar {
+  visibility: visible;
+}
 table {
     width: 100%;
+    min-width: 1000px;
+    
     th, td {
       border-bottom: 1px solid v.$secondary-bg; 
       border-collapse: collapse;
@@ -18,6 +34,16 @@ table {
       display: flex;
       justify-content: flex-start;
       align-items: center;
+    }
+  }
+
+  tbody {
+    overflow: auto;
+  }
+
+  td {
+    .prof-small {
+      margin-right: .5rem;
     }
   }
 
