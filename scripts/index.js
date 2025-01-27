@@ -3,11 +3,14 @@ function toggle() {
     let sidebar = document.querySelector(".sidebar");
     let a = document.querySelectorAll("a");
     let card = document.querySelectorAll(".card");
-    let td = document.querySelectorAll("td")
+    let hide = document.querySelectorAll(".hide > i");
+    let td = document.querySelectorAll("td");
     main.classList.toggle("lightmode");
     sidebar.classList.toggle("lightmode2");
-
-
+    console.log(hide)
+    for (let i = 0; i < hide.length; i++) {
+        hide[i].classList.toggle("lightmode3")
+    };
 
     for (let i = 0; i < td.length; i++) {
         td[i].classList.toggle("lightmode")

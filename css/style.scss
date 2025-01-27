@@ -69,13 +69,16 @@ html {
   color: v.$main-text-color;
  }
 
+ .header-icon { 
+    background-color: v.$secondary-bg;
+ }
+
  header {
   div:nth-of-type(2) {
     width: 12%;
     @include spaceBetween;
     align-items: center;
     .fa {
-      background-color: v.$secondary-bg;
       padding: .5rem;
       border-radius: 2px;
     }
@@ -113,6 +116,9 @@ main {
     background-color: rgb(156, 156, 156);
     color: v.$light-text-color;
 }
+.lightmode3 {
+    background-color: rgb(156, 156, 156);
+ }
 
 .display {
   margin: 0 auto;
@@ -312,7 +318,6 @@ table {
 
 
 }
-
 
 
 

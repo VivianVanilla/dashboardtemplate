@@ -287,6 +287,10 @@ a {
   color: #fafcfc;
 }
 
+.header-icon {
+  background-color: #1a1e1f;
+}
+
 header div:nth-of-type(2) {
   width: 12%;
   display: flex;
@@ -294,7 +298,6 @@ header div:nth-of-type(2) {
   align-items: center;
 }
 header div:nth-of-type(2) .fa {
-  background-color: #1a1e1f;
   padding: 0.5rem;
   border-radius: 2px;
 }
@@ -331,6 +334,10 @@ main {
 .lightmode2 {
   background-color: rgb(156, 156, 156);
   color: #070e0e;
+}
+
+.lightmode3 {
+  background-color: rgb(156, 156, 156);
 }
 
 .display {
