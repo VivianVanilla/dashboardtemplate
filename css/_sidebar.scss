@@ -18,36 +18,16 @@ flex-direction: column; }
 .navbar {
     a {
         display: flex;
-        img {
-            padding-right: 1em;
-        }
+        padding: .5rem;
+        border-radius: 5px;
     }
 }
 .teams {
-    a {
-        display: flex;
-    }
  p {
     font-size: .8em;
     color: gray;
  }
- .blue {
-    background-color: blue;
-    height: .9em;
-    width: .9em;
-    border-radius: .25em;
-    margin-right: 1em;
- }
- .red {
-    background-color: red;
-    height: .9em;
-    width: .9em;
-    border-radius: .25em;
-    margin-right: 1em;
- }
- img {
-    margin-right: 1em;
- }
+
 }
 .toggle {
     position: relative;

@@ -17,7 +17,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    
   }
 
 html {
@@ -35,11 +34,35 @@ html {
     flex-direction: column;
     }
 
+    .navbar {
+      .fa {
+        margin-right: 1.3rem;
+      }
+      a:hover {
+        color: v.$main-blue;
+        background-color: #36bcba50;
+      }
+    }
+
+    .teams {
+    .fa {
+      margin-right: 1.3rem;
+    }
+    .pink {
+      color: pink;
+    }
+    .blue {
+      color: lightblue;
+    }
+    }
+
     .navbar > *, .teams > * {
       margin-bottom: .95rem;
-      font-size: .8rem;
     }
   
+    span.hide {
+      font-size: 0.7rem;
+    }
 
  a {
   text-decoration: none;
@@ -95,6 +118,7 @@ main {
   margin: 0 auto;
   width: 100%;
   padding: 2rem;
+  overflow: hidden;
   > * {
     margin-bottom: 2rem;
   } 
@@ -165,8 +189,8 @@ header, .info-cards, .task-container, .card-header {
   border-radius: 2px;
   background: linear-gradient(
   to right,  
-  v.$main-yellow,
-    gray
+  v.$main-yellow 50%,
+    gray 50%
   );
 }
 
@@ -196,6 +220,9 @@ table {
   }
   th:nth-of-type(4), td:nth-of-type(4) {
     text-align: right;
+  }
+  tr:hover {
+    background-color: v.$secondary-bg;
   }
 }
 .logo {
@@ -236,7 +263,55 @@ table {
     }
 }
 
+@media screen and (max-width: 1300px) {
+  .navbar, .teams {
+    .fa {
+      margin-right: 0;
+    }
+  }
+  .teams {
+    align-items: center;
+  }
 
+  .sidebar {
+    align-items: center;
+  }
+  
+  span.hide {
+    display: none;
+  }
+
+  .info-cards {
+      justify-content: center;
+  }
+
+  .card:nth-of-type(odd) {
+      flex-grow: 0;
+  }
+  .card:nth-of-type(2) {
+      flex-grow: 0;
+  }
+  .card:nth-of-type(3) {
+    flex-grow: 0;
+}
+
+
+}
+
+@media screen and (max-width: 1235px) {
+  .sidebar {
+    height: 100vh;
+    justify-content: flex-start;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    .logo, .navbar, .teams {
+      margin-bottom: 2rem;
+    }
+  }
+
+
+}
 
 
 
