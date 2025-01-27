@@ -6,6 +6,7 @@ flex-direction: column; }
 .sidebar  {
     @extend .column ;
     background-color: v.$secondary-bg ;
+    color: v.$main-text-color;
     width:18%;
 }
 .navbar {

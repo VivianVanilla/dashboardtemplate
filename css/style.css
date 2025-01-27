@@ -6,6 +6,7 @@
 
 .sidebar {
   background-color: #1a1e1f;
+  color: #fafcfc;
   width: 18%;
 }
 
@@ -320,6 +321,16 @@ header h1 {
 main {
   background-color: #070e0e;
   display: flex;
+}
+
+.lightmode {
+  background-color: #D6DADA;
+  color: #070e0e;
+}
+
+.lightmode2 {
+  background-color: rgb(156, 156, 156);
+  color: #070e0e;
 }
 
 .display {
