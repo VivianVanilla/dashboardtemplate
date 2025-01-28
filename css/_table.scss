@@ -7,12 +7,12 @@
 .scrolling-table::-webkit-scrollbar {
   width: 0.5rem;
   height: 0.5rem;
-  background-color: gray;
-  border-radius: 0.5rem;
   visibility: hidden;
 }
-.scrolling-table:hover::-webkit-scrollbar {
+.scrolling-table:hover::-webkit-scrollbar-thumb {
   visibility: visible;
+  background-color: gray;
+  border-radius: 0.5rem;
 }
 table {
     width: 100%;
@@ -34,6 +34,9 @@ table {
       display: flex;
       justify-content: flex-start;
       align-items: center;
+    }
+    tr:hover {
+      background-color: v.$secondary-bg;
     }
   }
 
