@@ -106,7 +106,7 @@ input:checked + .slider:before {
 
 .card {
   background-color: #1a1e1f;
-  padding: 1.2rem;
+  padding: 2rem;
   border-radius: 0.9rem;
   display: flex;
   flex-direction: column;
@@ -130,6 +130,10 @@ input:checked + .slider:before {
   font-size: 0.7rem;
   font-weight: bold;
   border-radius: 0.5em;
+}
+
+.see-projects:hover {
+  cursor: pointer;
 }
 
 .date .fa-calendar-day {
