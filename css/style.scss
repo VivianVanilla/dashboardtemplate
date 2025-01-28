@@ -7,6 +7,10 @@
   display: flex;
   justify-content: space-between;
 }
+@mixin medProfPic() {
+  height: 2.5rem;
+  width: 2.5rem;
+}
 
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
 * {
@@ -134,16 +138,14 @@ main {
 }
 
 .user-prof-pic {
-  height: 2.5rem;
-  width: 2.5rem;
+  @include medProfPic;
   border: 1px solid gray;
   border-radius: 50%;
  }
 
  .user-prof-img {
   object-fit: cover;
-  height: 2.5rem;
-  width: 2.5rem;
+  @include medProfPic;
   border-radius: 50%;
  }
 
@@ -164,37 +166,7 @@ main {
         font-size: 1.5em;
      }
 }
-.lines {
-    display: flex;
-    justify-content: space-around;
-    align-items: end;
-    
-    .line1 {
-        background-color: azure;
-        color: black;
-        border-radius: .5em ;
-        padding-bottom: 7.1em;
-        text-align: center;
-        width: 30%;
-    }
-    .line2 {
-        background-color: orange;
-        color: black;
-        text-align: center;
-        border-radius: .5em ;
-        font-size: 01em;
-        padding-bottom: 9.7em;
-        width: 30%;
-    }
-    .line3 {
-        background-color: cornsilk;
-        color: black;
-        border-radius: .5em ;
-        padding-bottom: 8.6em;
-        text-align: center;
-        width: 30%;
-    }
-}
+
 
 @media screen and (max-width: 1300px) {
   .navbar, .teams {
